@@ -1,5 +1,5 @@
 resource "aws_opensearch_domain" "this" {
-  domain_name    = "fmarket"
+  domain_name    = "baroadream"
   engine_version = "OpenSearch_2.11"
 
   cluster_config {

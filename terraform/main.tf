@@ -31,16 +31,16 @@ provider "aws" {
 }
 
 locals {
-  name = "fmarket"
-  s3_origin_id = "fmarket_s3_origin"
+  name = "baroadream"
+  s3_origin_id = "baroadream_s3_origin"
 
   # TODO: 아래 있는 값은 변경해서 사용해주세요
   # 본인ID(email)을 사용해주세요. 중복될 경우 리소스 생성에 지장이 있습니다
-  uid = "gnidoc327"
+  uid = "baroadream"
 
   # 본인IP를 넣으세요. IP확인(https://www.myip.com/)
   myips = [
-    "183.101.243.112/32"
+    "121.134.221.250/32"
   ]
 
   # API Gateway의 API ID값을 넣으세요.(리소스ID X)

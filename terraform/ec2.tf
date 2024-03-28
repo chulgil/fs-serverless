@@ -1,8 +1,8 @@
 resource "aws_instance" "bastion" {
   ami = "ami-0bfd23bc25c60d5a1"
   # 필요시 다른 intel 타입으로 변경 가능
-  instance_type = "m7i.2xlarge"
-
+  # instance_type = "m7i.2xlarge"
+  instance_type = "t3.small"
   subnet_id                   = module.vpc.public_subnets[0]
   iam_instance_profile        = aws_iam_instance_profile.default.name
   key_name                    = local.name
@@ -11,7 +11,7 @@ resource "aws_instance" "bastion" {
   hibernation                 = false
 
   root_block_device {
-    volume_size = 100
+    volume_size = 20
     volume_type = "gp3"
     encrypted   = true
   }
