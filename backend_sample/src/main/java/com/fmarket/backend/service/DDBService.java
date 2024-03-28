@@ -1,6 +1,6 @@
-package com.fmarket.backend.service;
+package com.barodream.backend.service;
 
-import com.fmarket.backend.entity.PurchaseHistory;
+import com.barodream.backend.entity.PurchaseHistory;
 import org.springframework.stereotype.Service;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 import software.amazon.awssdk.services.dynamodb.model.*;

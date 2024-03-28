@@ -1,6 +1,6 @@
 resource "aws_cloudfront_distribution" "frontend" {
   enabled             = true
-  comment             = "fmarket frontend"
+  comment             = "barodream frontend"
   wait_for_deployment = false
   default_root_object = "index.html"
   is_ipv6_enabled     = false
@@ -83,12 +83,12 @@ resource "aws_cloudfront_distribution" "frontend" {
 }
 
 resource "aws_cloudfront_origin_access_identity" "s3_origin_access_identity" {
-  comment = "fmarket origin_access_identity for s3"
+  comment = "barodream origin_access_identity for s3"
 }
 
 resource "aws_cloudfront_distribution" "content" {
   enabled             = true
-  comment             = "fmarket content"
+  comment             = "barodream content"
   wait_for_deployment = false
   is_ipv6_enabled     = false
 
@@ -127,7 +127,7 @@ resource "aws_cloudfront_distribution" "content" {
   origin {
     connection_attempts = 3
     connection_timeout  = 10
-    domain_name         = module.s3_list["fmarket-goods-${local.uid}"].s3_bucket_bucket_regional_domain_name
+    domain_name         = module.s3_list["barodream-goods-${local.uid}"].s3_bucket_bucket_regional_domain_name
 
     origin_id = local.s3_origin_id
     s3_origin_config {

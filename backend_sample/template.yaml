@@ -1,6 +1,6 @@
 # sam build
-# sam deploy --stack-name fmarket-backend --s3-bucket lambda-package-$UID --capabilities CAPABILITY_IAM
-# sam list endpoints --output json --stack-name fmarket-backend
+# sam deploy --stack-name barodream-backend --s3-bucket lambda-package-$UID --capabilities CAPABILITY_IAM
+# sam list endpoints --output json --stack-name barodream-backend
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 
@@ -16,9 +16,9 @@ Resources:
   FmarketBackendFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Role: arn:aws:iam::444717425091:role/fmarket-lambda-role
+      Role: arn:aws:iam::444717425091:role/barodream-lambda-role
       CodeUri: .
-      Handler: com.fmarket.backend.LambdaHandler::handleRequest
+      Handler: com.barodream.backend.LambdaHandler::handleRequest
       Runtime: java17
       AutoPublishAlias: production
 #      SnapStart:

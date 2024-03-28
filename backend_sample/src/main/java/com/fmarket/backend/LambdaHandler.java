@@ -1,4 +1,4 @@
-package com.fmarket.backend;
+package com.barodream.backend;
 
 import com.amazonaws.serverless.exceptions.ContainerInitializationException;
 import com.amazonaws.serverless.proxy.model.AwsProxyRequest;

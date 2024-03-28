@@ -4,9 +4,9 @@ const AWS = require('aws-sdk');
 
 // TODO: 정보를 본인 계정에 맞게 변경
 const mysqlHost =
-  'fmarket.cluster-c9piytoc4vtx.ap-northeast-2.rds.amazonaws.com';
+  'barodream.cluster-c9piytoc4vtx.ap-northeast-2.rds.amazonaws.com';
 const openSearchHost =
-  'https://vpc-fmarket-znt3kjbc5nszf3eib44pxdlwva.ap-northeast-2.es.amazonaws.com'; // OpenSearch 호스트 주소
+  'https://vpc-barodream-znt3kjbc5nszf3eib44pxdlwva.ap-northeast-2.es.amazonaws.com'; // OpenSearch 호스트 주소
 const verifyEmail = 'gnidoc327@gmail.com';
 const sendMailOff = true;
 
@@ -18,9 +18,9 @@ const ses = new AWS.SES({
 // MySQL 연결 정보
 const connectionConfig = {
   host: mysqlHost,
-  user: 'fmarket',
-  password: 'fmarket1!',
-  database: 'fmarket',
+  user: 'barodream',
+  password: 'barodream1!',
+  database: 'barodream',
 };
 
 // OpenSearch 연결 정보
@@ -28,7 +28,7 @@ const openSearchIndex = 'goods-item'; // 인덱스 이름
 const openSearchUrl = `${openSearchHost}`;
 const axiosConfig = {
   auth: {
-    username: 'fmarket',
+    username: 'barodream',
     password: 'Fmarket1!',
   },
 };
@@ -62,7 +62,7 @@ const processMessage = async (message) => {
 
   const goodsItem = rows[0];
   const openSearchRes = await axios.post(
-    `${openSearchUrl}/fmarket/_doc/${goodsItem.id}`,
+    `${openSearchUrl}/barodream/_doc/${goodsItem.id}`,
     goodsItem,
     axiosConfig
   );

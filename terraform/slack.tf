@@ -7,6 +7,6 @@ module "notify_slack" {
   source  = "terraform-aws-modules/notify-slack/aws"
   version = "6.1.0"
 
-  sns_topic_name = "fmarket-notification"
-  slack_username    = "fmarket"
+  sns_topic_name = "barodream-notification"
+  slack_username    = "barodream"
 }

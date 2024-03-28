@@ -1,4 +1,4 @@
-package com.fmarket.backend.service;
+package com.barodream.backend.service;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

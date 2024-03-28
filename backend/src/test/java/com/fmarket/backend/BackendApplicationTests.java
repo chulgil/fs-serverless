@@ -1,4 +1,4 @@
-package com.fmarket.backend;
+package com.barodream.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

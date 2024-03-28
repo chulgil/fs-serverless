@@ -1,4 +1,4 @@
-package com.fmarket.backend.config;
+package com.barodream.backend.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

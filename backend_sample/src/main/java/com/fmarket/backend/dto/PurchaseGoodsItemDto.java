@@ -1,4 +1,4 @@
-package com.fmarket.backend.dto;
+package com.barodream.backend.dto;
 
 import lombok.Getter;
 import lombok.Setter;

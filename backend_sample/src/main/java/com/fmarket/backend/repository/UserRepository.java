@@ -1,6 +1,6 @@
-package com.fmarket.backend.repository;
+package com.barodream.backend.repository;
 
-import com.fmarket.backend.entity.User;
+import com.barodream.backend.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository extends JpaRepository<User, Long> {

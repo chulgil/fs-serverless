@@ -1,9 +1,9 @@
-package com.fmarket.backend.controller;
+package com.barodream.backend.controller;
 
-import com.fmarket.backend.dto.LoginRequestDto;
-import com.fmarket.backend.entity.User;
-import com.fmarket.backend.repository.UserRepository;
-import com.fmarket.backend.service.CognitoService;
+import com.barodream.backend.dto.LoginRequestDto;
+import com.barodream.backend.entity.User;
+import com.barodream.backend.repository.UserRepository;
+import com.barodream.backend.service.CognitoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

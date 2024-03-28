@@ -1,4 +1,4 @@
-package com.fmarket.backend.entity;
+package com.barodream.backend.entity;
 
 
 import jakarta.persistence.Entity;

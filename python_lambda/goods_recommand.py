@@ -8,19 +8,19 @@ from requests.auth import HTTPBasicAuth
 OPENSEARCH_HOST = 'https://localhost:9200'
 DB_HOST = 'localhost'
 
-OPENSEARCH_USER = "fmarket"
+OPENSEARCH_USER = "barodream"
 OPENSEARCH_PASSWORD = "Fmarket1!"
 
-DB_NAME = 'fmarket'
-DB_USER = 'fmarket'
-DB_PASSWORD = 'fmarket1!'
+DB_NAME = 'barodream'
+DB_USER = 'barodream'
+DB_PASSWORD = 'barodream1!'
 
 ddb = boto3.client('dynamodb')
 auth = HTTPBasicAuth(OPENSEARCH_USER, OPENSEARCH_PASSWORD)
 
 
 def analyze_text_list(text_list: list[str]) -> list[str]:
-    res = requests.post(f"{OPENSEARCH_HOST}/fmarket/_analyze", auth=auth, verify=False,
+    res = requests.post(f"{OPENSEARCH_HOST}/barodream/_analyze", auth=auth, verify=False,
                         headers={
                             'Content-Type': 'application/json'
                         },
@@ -49,7 +49,7 @@ def search(keywords: list[str]) -> list[int]:
             }
         }
     }
-    res = requests.post(f"{OPENSEARCH_HOST}/fmarket/_search", auth=auth, verify=False,
+    res = requests.post(f"{OPENSEARCH_HOST}/barodream/_search", auth=auth, verify=False,
                         headers={
                             'Content-Type': 'application/json'
                         },

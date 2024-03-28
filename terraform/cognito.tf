@@ -1,5 +1,5 @@
 resource "aws_cognito_user_pool" "this" {
-  name = "fmarket-user-pool"
+  name = "barodream-user-pool"
 
   password_policy {
     minimum_length    = 6
@@ -14,7 +14,7 @@ resource "aws_cognito_user_pool" "this" {
 }
 
 resource "aws_cognito_user_pool_client" "this" {
-  name = "fmarket-user-pool-client"
+  name = "barodream-user-pool-client"
 
   user_pool_id = aws_cognito_user_pool.this.id
 

@@ -1,7 +1,7 @@
-package com.fmarket.backend.controller;
+package com.barodream.backend.controller;
 
-import com.fmarket.backend.entity.PurchaseHistory;
-import com.fmarket.backend.service.DDBService;
+import com.barodream.backend.entity.PurchaseHistory;
+import com.barodream.backend.service.DDBService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

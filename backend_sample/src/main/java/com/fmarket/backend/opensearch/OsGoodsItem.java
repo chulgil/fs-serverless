@@ -1,4 +1,4 @@
-package com.fmarket.backend.opensearch;
+package com.barodream.backend.opensearch;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

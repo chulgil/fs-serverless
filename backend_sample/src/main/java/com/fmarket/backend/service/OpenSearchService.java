@@ -1,8 +1,8 @@
-package com.fmarket.backend.service;
+package com.barodream.backend.service;
 
-import com.fmarket.backend.entity.GoodsItem;
-import com.fmarket.backend.opensearch.OsGoodsItem;
-import com.fmarket.backend.repository.GoodsItemRepository;
+import com.barodream.backend.entity.GoodsItem;
+import com.barodream.backend.opensearch.OsGoodsItem;
+import com.barodream.backend.repository.GoodsItemRepository;
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.conn.ssl.TrustSelfSignedStrategy;
 import org.apache.http.ssl.SSLContextBuilder;
@@ -58,7 +58,7 @@ public class OpenSearchService {
         RestTemplate restTemplate = new RestTemplate(requestFactory);
         restTemplate.getInterceptors().add(
                 new BasicAuthenticationInterceptor(username, password));
-        String searchEndpoint = openSearchEndpoint + "/fmarket/_search";
+        String searchEndpoint = openSearchEndpoint + "/barodream/_search";
         String requestBody = "{ \"_source\": [\"id\"], \"query\": { \"bool\": { \"should\": [ { \"match\": { \"name\": \"" + keyword + "\" } }, { \"match\": { \"description\": \"" + keyword + "\" } } ] } } }";
         HttpHeaders headers = new HttpHeaders();
         headers.set("Content-Type", "application/json");

@@ -1,7 +1,7 @@
-package com.fmarket.backend.controller;
+package com.barodream.backend.controller;
 
-import com.fmarket.backend.entity.User;
-import com.fmarket.backend.repository.UserRepository;
+import com.barodream.backend.entity.User;
+import com.barodream.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,7 +1,7 @@
-package com.fmarket.backend.service;
+package com.barodream.backend.service;
 
-import com.fmarket.backend.entity.User;
-import com.fmarket.backend.repository.UserRepository;
+import com.barodream.backend.entity.User;
+import com.barodream.backend.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;

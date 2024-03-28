@@ -8,7 +8,7 @@
 
 ### spring 프로젝트 생성
 
-- Spring Boot 프로젝트 생성: https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.2&packaging=jar&jvmVersion=17&groupId=com.fmarket&artifactId=backend&name=backend&description=fastcampus%20fmarket%20project&packageName=com.fmarket.backend&dependencies=lombok,web
+- Spring Boot 프로젝트 생성: https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.2&packaging=jar&jvmVersion=17&groupId=com.barodream&artifactId=backend&name=backend&description=fastcampus%20barodream%20project&packageName=com.barodream.backend&dependencies=lombok,web
 - ChatGPT: https://chat.openai.com/
 - Spring Boot를 Lambda에 배포: https://github.com/aws/serverless-java-container/wiki/Quick-start---Spring-Boot3
 - 프로젝트 빌드
