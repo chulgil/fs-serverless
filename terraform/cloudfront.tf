@@ -1,6 +1,6 @@
 resource "aws_cloudfront_distribution" "frontend" {
   enabled             = true
-  comment             = "barodream frontend"
+  comment             = "${local.name} frontend"
   wait_for_deployment = false
   default_root_object = "index.html"
   is_ipv6_enabled     = false
@@ -83,12 +83,12 @@ resource "aws_cloudfront_distribution" "frontend" {
 }
 
 resource "aws_cloudfront_origin_access_identity" "s3_origin_access_identity" {
-  comment = "barodream origin_access_identity for s3"
+  comment = "${local.name} origin_access_identity for s3"
 }
 
 resource "aws_cloudfront_distribution" "content" {
   enabled             = true
-  comment             = "barodream content"
+  comment             = "${local.name} content"
   wait_for_deployment = false
   is_ipv6_enabled     = false
 
@@ -127,7 +127,7 @@ resource "aws_cloudfront_distribution" "content" {
   origin {
     connection_attempts = 3
     connection_timeout  = 10
-    domain_name         = module.s3_list["barodream-goods-${local.uid}"].s3_bucket_bucket_regional_domain_name
+    domain_name         = module.s3_list["${local.name}-goods-${local.uid}"].s3_bucket_bucket_regional_domain_name
 
     origin_id = local.s3_origin_id
     s3_origin_config {

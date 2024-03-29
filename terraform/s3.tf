@@ -2,8 +2,8 @@
 module "s3_list" {
   for_each = toset([
     "react-project-${local.uid}",
-    "barodream-profile-${local.uid}",
-    "barodream-goods-${local.uid}",
+    "${local.name}-profile-${local.uid}",
+    "${local.name}-goods-${local.uid}",
     "lambda-package-${local.uid}"
   ])
   source  = "terraform-aws-modules/s3-bucket/aws"
@@ -52,7 +52,7 @@ data "aws_iam_policy_document" "content_s3_policy" {
   statement {
     actions = ["s3:GetObject"]
     resources = [
-      "${module.s3_list["barodream-goods-${local.uid}"].s3_bucket_arn}/*"
+      "${module.s3_list["${local.name}-goods-${local.uid}"].s3_bucket_arn}/*"
     ]
 
     principals {
@@ -63,6 +63,6 @@ data "aws_iam_policy_document" "content_s3_policy" {
 }
 
 resource "aws_s3_bucket_policy" "content" {
-  bucket = module.s3_list["barodream-goods-${local.uid}"].s3_bucket_id
+  bucket = module.s3_list["${local.name}-goods-${local.uid}"].s3_bucket_id
   policy = data.aws_iam_policy_document.content_s3_policy.json
 }

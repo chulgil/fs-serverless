@@ -1,5 +1,5 @@
 resource "aws_cognito_user_pool" "this" {
-  name = "barodream-user-pool"
+  name = "${local.name}-user-pool"
 
   password_policy {
     minimum_length    = 6
@@ -14,7 +14,7 @@ resource "aws_cognito_user_pool" "this" {
 }
 
 resource "aws_cognito_user_pool_client" "this" {
-  name = "barodream-user-pool-client"
+  name = "${local.name}-user-pool-client"
 
   user_pool_id = aws_cognito_user_pool.this.id
 

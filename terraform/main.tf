@@ -31,8 +31,8 @@ provider "aws" {
 }
 
 locals {
-  name = "baroadream"
-  s3_origin_id = "baroadream_s3_origin"
+  name = "barodream"
+  s3_origin_id = "${local.name}_s3_origin"
 
   # TODO: 아래 있는 값은 변경해서 사용해주세요
   # 본인ID(email)을 사용해주세요. 중복될 경우 리소스 생성에 지장이 있습니다
