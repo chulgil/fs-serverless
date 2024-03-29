@@ -36,7 +36,7 @@ locals {
 
   # TODO: 아래 있는 값은 변경해서 사용해주세요
   # 본인ID(email)을 사용해주세요. 중복될 경우 리소스 생성에 지장이 있습니다
-  uid = "baroadream"
+  uid = "barodream"
 
   # 본인IP를 넣으세요. IP확인(https://www.myip.com/)
   myips = [

@@ -1,5 +1,5 @@
 # sam build
-# sam deploy --stack-name barodream-backend --s3-bucket lambda-package-$UID --capabilities CAPABILITY_IAM
+# sam deploy --stack-name barodream-backend --s3-bucket lambda-package-barodream --capabilities CAPABILITY_IAM
 # sam list endpoints --output json --stack-name barodream-backend
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
@@ -46,7 +46,7 @@ Resources:
               Ref: BarodreamBackendApi
       VpcConfig:
         SecurityGroupIds:
-          - sg-07495da599b5cd223
+          - sg-02fae9390d8e34b2c
         SubnetIds:
-          - subnet-0971bb0f5ca4c84ce
-          - subnet-09461a82b58e36d96
+          - subnet-0d6292e404a0ba5d5
+          - subnet-0df194387a1a51264
