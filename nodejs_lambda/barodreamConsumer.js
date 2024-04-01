@@ -29,7 +29,7 @@ const openSearchUrl = `${openSearchHost}`;
 const axiosConfig = {
   auth: {
     username: 'barodream',
-    password: 'Fmarket1!',
+    password: 'Barodream1!',
   },
 };
 
@@ -68,7 +68,7 @@ const processMessage = async (message) => {
   );
   console.log('openSearchRes=', openSearchRes);
 
-  const subject = `Fmarket 상품 등록 알림(${username})`;
+  const subject = `Barodream 상품 등록 알림(${username})`;
   const body = `상품명: ${goodsItem.name}\n상품정보: ${goodsItem.description}`;
   const sendMailRes = await sendMail(subject, body);
   console.log('sendMailRes=', sendMailRes);

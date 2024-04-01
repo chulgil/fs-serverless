@@ -12,8 +12,8 @@ public class SwaggerConfig {
     public OpenAPI openAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("Fmarket Swagger")
+                        .title("Barodream Swagger")
                         .version("0.1")
-                        .description("Fmarket Swagger docs"));
+                        .description("Barodream Swagger docs"));
     }
 }

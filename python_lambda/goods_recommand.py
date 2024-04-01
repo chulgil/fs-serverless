@@ -9,7 +9,7 @@ OPENSEARCH_HOST = 'https://localhost:9200'
 DB_HOST = 'localhost'
 
 OPENSEARCH_USER = "barodream"
-OPENSEARCH_PASSWORD = "Fmarket1!"
+OPENSEARCH_PASSWORD = "Barodream1!"
 
 DB_NAME = 'barodream'
 DB_USER = 'barodream'

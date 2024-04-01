@@ -56,7 +56,7 @@ const App = () => {
           style={{color: 'white', fontSize: 30}}
           onClick={() => navigate('/')}
         >
-          Fmarket
+          Barodream
         </div>
         <Search
           placeholder="키워드 검색(ex - 국밥)"
