@@ -1,6 +1,5 @@
 package com.barodream.backend.dto;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,7 +9,8 @@ import lombok.Setter;
 @Setter
 @Builder
 @AllArgsConstructor
-public class LoginRequestDto {
-    private String username;
-    private String password;
+public class PurchaseGoodsDto {
+    private Long userId;
+    private Long goodsId;
+    private Integer quantity;
 }

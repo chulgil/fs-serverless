@@ -24,7 +24,7 @@ resource "aws_opensearch_domain" "this" {
     internal_user_database_enabled = true
     master_user_options {
       master_user_name     = local.name
-      master_user_password = "Fmarket1!"
+      master_user_password = "Barodream1!"
     }
   }
   node_to_node_encryption {
