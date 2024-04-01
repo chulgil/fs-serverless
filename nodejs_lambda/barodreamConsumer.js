@@ -4,10 +4,10 @@ const AWS = require('aws-sdk');
 
 // TODO: 정보를 본인 계정에 맞게 변경
 const mysqlHost =
-  'barodream.cluster-c9piytoc4vtx.ap-northeast-2.rds.amazonaws.com';
+  'barodream.cluster-ctiuwm6406kz.ap-northeast-2.rds.amazonaws.com';
 const openSearchHost =
-  'https://vpc-barodream-znt3kjbc5nszf3eib44pxdlwva.ap-northeast-2.es.amazonaws.com'; // OpenSearch 호스트 주소
-const verifyEmail = 'gnidoc327@gmail.com';
+  'https://vpc-barodream-mzo4poqcpldmrvkmg2rdxh2kbe.ap-northeast-2.es.amazonaws.com'; // OpenSearch 호스트 주소
+const verifyEmail = 'baroadream@gmail.com';
 const sendMailOff = true;
 
 // AWS SES 설정
