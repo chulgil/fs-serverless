@@ -52,7 +52,7 @@ const processMessage = async (message) => {
   const username = message.split('/')[1];
 
   // MySQL 쿼리
-  const queryString = 'SELECT * FROM goods_item WHERE id = ?';
+  const queryString = 'SELECT * FROM goods WHERE id = ?';
   const connection = await mysql.createConnection(connectionConfig);
 
   const [rows] = await connection.execute(queryString, [goodsItemId]);

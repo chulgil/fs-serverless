@@ -75,7 +75,7 @@ def lambda_handler(event: dict):
         ExpressionAttributeNames={
             "#name": "name"
         },
-        ProjectionExpression='user_id,created_at,#name,description,goods_item_id',
+        ProjectionExpression='user_id,created_at,#name,description,goods_id',
         ScanIndexForward=False,
         Limit=10
     )
